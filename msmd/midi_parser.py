@@ -48,7 +48,8 @@ class MidiParser(object):
             if not os.path.isfile(audio_path):
                 logging.info('...audio file does not exist!')
 
-            spec = extract_spectrogram(audio_path, frame_size=frame_size, sample_rate=sample_rate, fps=fps,
+            spec = extract_spectrogram(audio_path, frame_size=frame_size, sample_rate=sample_rate, 
+                                        fps=fps,
                                        num_bands=num_bands, fmin=fmin, fmax=fmax)
 
         # show results

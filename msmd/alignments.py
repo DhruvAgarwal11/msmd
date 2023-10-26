@@ -27,13 +27,15 @@ import numpy
 from muscima.cropobject import cropobjects_merge_bbox, CropObject, link_cropobjects
 from skimage.measure import regionprops
 
-from msmd.data_model.score import group_mungos_by_column
-from msmd.midi_parser import notes_to_onsets
-from msmd.utils import greater_than_zero_intervals
+# from .data_model.score import group_mungos_by_column
+from .midi_parser import notes_to_onsets
+# from .utils import greater_than_zero_intervals
 
 __version__ = "0.0.1"
 __author__ = "Jan Hajic jr."
 
+# def __init__(self):
+#     super
 
 def align_score_to_performance(score, performance, fps=20):
     """For each MuNG note in the score, finds the MIDI matrix cell that
@@ -69,6 +71,7 @@ def align_score_to_performance(score, performance, fps=20):
     for m_objid, e_idx in aln:
         m = mdict[m_objid]
         e = note_events[e_idx]
+        # from .midi_parser import notes_to_onsets
         onset_frame = notes_to_onsets([e], dt=1.0 / fps)
         m.data['{0}_onset_seconds'.format(performance.name)] = e[0]
         m.data['{0}_onset_frame'.format(performance.name)] = int(onset_frame)

@@ -1,14 +1,15 @@
 name: msmd
 
 dependencies:
-- python=3.6
-- numpy=1.16.2
-- matplotlib=3.0.2
-- scikit-learn=0.20.2
-- qt=5.9.7
-- pyqt=5.9.2
-- cython=0.29.6
-- jupyter=1.0.0
+- pip
+- python
+- numpy
+- matplotlib
+- scikit-learn
+- qt
+- pyqt
+- cython
+- jupyter
 
 - pip:
   - madmom==0.16.1
@@ -16,7 +17,6 @@ dependencies:
   - pyyaml==3.13
   - pdfminer.six==20181108
   - python-ly==0.9.5
-  - git+git://github.com/hajicj/muscima#egg=muscima
   - abjad==3.0.0
   - scikit-image==0.14.2
   - tqdm==4.31.1

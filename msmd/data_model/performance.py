@@ -5,7 +5,7 @@ import logging
 import os
 import numpy
 
-from msmd.data_model.util import MSMDDBError, path2name, MSMDMetadataMixin
+from .util import MSMDDBError, path2name, MSMDMetadataMixin
 
 __version__ = "0.0.1"
 __author__ = "Jan Hajic jr."

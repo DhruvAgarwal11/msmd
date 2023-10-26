@@ -7,9 +7,10 @@ import shutil
 import time
 from operator import itemgetter
 
-from msmd.data_model.performance import Performance
-from msmd.data_model.score import Score
-from msmd.data_model.util import MSMDDBError, MSMDMetadataMixin
+# from msmd.data_model.performance import Performance
+from .performance import Performance
+from .score import Score
+from .util import MSMDDBError, MSMDMetadataMixin
 
 __version__ = "0.0.1"
 __author__ = "Jan Hajic jr."
